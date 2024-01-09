@@ -2,8 +2,8 @@ import nekos
 import requests
 from telegram.ext import run_async
 
-from IRO import dispatcher
-from IRO.modules.disable import DisableAbleCommandHandler
+from AloneRobot import dispatcher
+from AloneRobot.modules.disable import DisableAbleCommandHandler
 
 url_sfw = "https://api.waifu.pics/sfw/"
 
