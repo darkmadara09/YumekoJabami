@@ -75,33 +75,33 @@ PM_START_TEX = """
 
 
 PM_START_TEXT = """ 
-*нєу* {} , 🥀
+*нєу* {} , 💝
 
-*๏ ᴛʜɪs ɪs {} !
-
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ғᴏʀ ᴍᴀɴᴀɢɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-
-──────────────────
-๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+ ɪ'ᴍ {} !
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+ɪ'ᴍ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ + ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ʟɪᴋᴇ:
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+・ᴘʜ-ʟᴏɢᴏ ᴍᴀᴋᴇʀ.
+・ꜱᴘᴀᴍ ᴘʀᴏᴛᴇᴄᴛɪᴏɴ.
+・ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ.
+・ɢᴀᴍᴇs.
+・ᴀɪ ᴄʜᴀᴛʙᴏᴛ.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ",
+            text="⚡𝗛𝗜𝗝𝗔𝗖𝗞 𝗠𝗘⚡",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
+        InlineKeyboardButton(text="⛩𝗔𝗕𝗜𝗟𝗜𝗧𝗜𝗘𝗦⛩", callback_data="help_back"),
     ],
     [ 
-        InlineKeyboardButton(text="Dᴇᴠᴇʟᴏᴘᴇʀ", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text=f"Sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
-        InlineKeyboardButton(text="Bᴏᴛ Iɴғᴏ", callback_data="alone_"),
-        InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ", callback_data="source_"),
+        InlineKeyboardButton(text="🎵𝗠𝗨𝗦𝗜𝗖🎵", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text=f"𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     
 
@@ -596,7 +596,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
 ᴀɴᴅ ᴜsɪɴɢ [sǫʟᴀʟᴄʜᴇᴍʏ](https://www.sqlalchemy.org) ᴀɴᴅ [ᴍᴏɴɢᴏ](https://cloud.mongodb.com) ᴀs ᴅᴀᴛᴀʙᴀsᴇ.
 
 
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74)
+*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜɢɪᴛʜᴜʙ]
 
 
 {BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74/blob/main/LICENSE).
@@ -606,15 +606,15 @@ def Source_about_callback(update: Update, context: CallbackContext):
             
             reply_markup=InlineKeyboardMarkup(
                 [[
-        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74")
+        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="https://t.me/ix_bot_support_gc")
                 ],
                  [
-        InlineKeyboardButton(text="🏡", callback_data="alone_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="alone_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],[InlineKeyboardButton(text="◁", callback_data="source_back")]]
+        InlineKeyboardButton(text="", callback_data="alone_back"),
+        InlineKeyboardButton(text="", callback_data="alone_"),
+        InlineKeyboardButton(text="", callback_data="source_"),
+        InlineKeyboardButton(text="", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="", callback_data="Main_help"),
+     ],[InlineKeyboardButton(text="", callback_data="source_back")]]
             ),
         )
     elif query.data == "source_back":
@@ -681,7 +681,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="alone_support")
+                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="ix_bot_support_gc)
                     ]
                 ]
             ),
@@ -707,7 +707,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="alone_support")
+                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="ix_bot_support_gc")
                     ]
                 ]
             ),
@@ -734,7 +734,7 @@ c ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="alone_support")
+                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="ix_bot_support_gc")
                     ]
                 ]
             ),
@@ -754,7 +754,7 @@ c ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="alone_support")
+                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="ix_bot_support_gc)
                     ]
                 ]
             ),
@@ -825,7 +825,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="alone_support")]]
+                [[InlineKeyboardButton(text="◁", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="ix_bot_support_gc)]]
             ),
         )
 
@@ -995,7 +995,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 6079943111:
             update.effective_message.reply_text(
-                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://github.com/TeamAloneOp/AloneRobot)"
+                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://t.me/ix_bot_support_gc)"
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATE_STRING})",
                 parse_mode=ParseMode.MARKDOWN,
                 
@@ -1045,7 +1045,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ➕",
-                            url="https://t.me/AloneXRobot?startgroup=true"
+                            url="https://t.me/yumeko_ixbot?startgroup=true"
                             )
                        ]
                 ]
@@ -1058,7 +1058,7 @@ def main():
                 caption=f"""
 ✨ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.
 ━━━━━━━━━━━━━
-**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ [ᴧŁꪮɳᴇ](https://t.me/ALONE_WAS_BOT)**
+**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ [ʏᴜᴍᴇᴋᴏ](https://t.me/yumeko_ixbot)**
 **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{y()}`
 **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ:** `{telever}`
 **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{tlhver}`
