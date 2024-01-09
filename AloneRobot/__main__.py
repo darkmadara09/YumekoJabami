@@ -832,7 +832,7 @@ def get_help(update: Update, context: CallbackContext):
     else:
         send_help(chat.id, HELP_STRINGS)
 
-),
+
 def send_settings(chat_id, user_id, user=False):
     if user:
         if USER_SETTINGS:
