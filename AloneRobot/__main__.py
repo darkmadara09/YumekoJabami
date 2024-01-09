@@ -100,7 +100,7 @@ buttons = [
         InlineKeyboardButton(text="⛩𝗔𝗕𝗜𝗟𝗜𝗧𝗜𝗘𝗦⛩", callback_data="help_back"),
     ],
     [ 
-        InlineKeyboardButton(text="🎵𝗠𝗨𝗦𝗜𝗖🎵", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🎵𝗠𝗨𝗦𝗜𝗖🎵", callback_data=f"settings_back_helper"),
         InlineKeyboardButton(text=f"𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     
