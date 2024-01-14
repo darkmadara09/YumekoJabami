@@ -215,7 +215,7 @@ __mod_name__ = "𝐀ᴘᴘʀᴏᴠᴀʟ"
 
 # ғᴏʀ ʜᴇʟᴘ ᴍᴇɴᴜ
 # """
-from Exon.modules.language import gs
+from AloneRobot.modules.language import gs
 
 
 def get_help(chat):
