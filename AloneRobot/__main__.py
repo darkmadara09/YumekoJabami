@@ -427,7 +427,7 @@ def Alone_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="alone_"),
+                        InlineKeyboardButton(text="ᴘʀᴇᴠ", callback_data="alone_"),
                     ],
                 ]
             ),
@@ -461,7 +461,7 @@ def AloneRobot_Main_Callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="🍹 Aᴅᴠᴀɴᴄᴇ", callback_data="advance_help"),
                         InlineKeyboardButton(text="Dᴏɴᴀᴛɪᴏɴ 🎉", callback_data="donation_help") 
                     ],
-                    [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="alone_back")]
+                    [InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="alone_back")]
                 ]
             ),
         )
