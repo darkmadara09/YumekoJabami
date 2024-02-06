@@ -372,8 +372,6 @@ def stats_back(update: Update, context: CallbackContext):
 ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: {tlhver}
 ᴩʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: {pyrover}
 """
-        
-        await query.answer(text=text, show_alert=True)
             
     elif query.data == "alone_support":
         query.message.edit_caption("**๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀ**"
