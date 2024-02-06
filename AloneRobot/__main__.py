@@ -357,7 +357,7 @@ def help_button(update, context):
     except BadRequest:
         pass
 
-async def stats_back(c: MukeshRobot, q: CallbackQuery):
+def stats_back(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "insider_":
         uptime = get_readable_time((time.time() - StartTime))
