@@ -360,10 +360,10 @@ def help_button(update, context):
 def Alone_stats_back(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "insider_":
-        ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: {y()}
-        ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ: {telever}
-        ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: {tlhver}
-        ᴩʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: {pyrover}
+        python version = {y()}
+        library version = {telever}
+        telethon version = {tlhver}
+        pyrogram version = {pyrover}
         text = f"""
 𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
 ➖➖➖➖➖➖
