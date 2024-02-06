@@ -360,7 +360,7 @@ def help_button(update, context):
 def Alone_stats_back(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "insider_":
-        start = time()
+        python version = (PYTHON_VERSION)
         text = f"""
 𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
 ➖➖➖➖➖➖
