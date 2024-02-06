@@ -357,7 +357,7 @@ def help_button(update, context):
     except BadRequest:
         pass
 
-def stats_back(update: Update, context: CallbackContext):
+def Alone_stats_back(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "insider_":
         uptime = get_readable_time((time.time() - StartTime))
@@ -1056,7 +1056,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        Alone_about_callback, pattern=r"alone_", run_async=True
+        Alone_stats_back, pattern=r"insider_", run_async=True
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
