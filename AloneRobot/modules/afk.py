@@ -1,19 +1,18 @@
 import time, re
-from config import BOT_USERNAME
 import random 
 from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
-from YukkiMusic import app
-from YukkiMusic.mongo.readable_time import get_readable_time
-from YukkiMusic.mongo.afkdb import add_afk, is_afk, remove_afk
+from AloneRobot import pbot
+from AloneRobot.mongo.readable_time import get_readable_time
+from AloneRobot.mongo.afkdb import add_afk, is_afk, remove_afk
 
 JIHA = [
-"https://telegra.ph/file/790f5f3cdcbe30633a541.jpg",
-"https://telegra.ph/file/ec3283c6af0a1795d47a7.jpg"
+"https://graph.org/file/3556ade8982547a293cf3.jpg",
+"https://graph.org/file/3556ade8982547a293cf3.jpg"
 ]
 
-@app.on_message(filters.command(["afk"], prefixes=["/", "!", ""]))
+@pbot.on_message(filters.command(["afk"], prefixes=["/", "!", ""]))
 async def active_afk(_, message: Message):
     if message.sender_chat:
         return
