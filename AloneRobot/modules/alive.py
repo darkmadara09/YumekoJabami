@@ -19,7 +19,7 @@ PHOTO = [
 
 Alone = [
     [
-        InlineKeyboardButton(text="ɴᴏᴏʙ", user_id=OWNER_ID),
+        InlineKeyboardButton(text="ʏᴜᴍᴇᴋᴏ", user_id=OWNER_ID),
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
@@ -54,7 +54,7 @@ async def restart(client, m: Message):
         START_IMG,
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴀʟᴏɴᴇ](tg://user?id={OWNER_ID})
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [ʏᴜᴍᴇᴋᴏ](tg://user?id={OWNER_ID})
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
   
