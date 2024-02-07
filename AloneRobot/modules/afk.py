@@ -4,8 +4,8 @@ from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
 from AloneRobot import pbot
-from AloneRobot.mongo.readable_time import get_readable_time
-from AloneRobot.mongo.afkdb import add_afk, is_afk, remove_afk
+from AloneRobot.Love.readable_time import get_readable_time
+from AloneRobot.Love.afkdb import add_afk, is_afk, remove_afk
 
 JIHA = [
 "https://graph.org/file/3556ade8982547a293cf3.jpg",
@@ -173,7 +173,7 @@ async def active_afk(_, message: Message):
 chat_watcher_group = 1
 
 
-@app.on_message(
+@pboto.on_message(
     ~filters.me & ~filters.bot & ~filters.via_bot,
     group=chat_watcher_group,
 )
