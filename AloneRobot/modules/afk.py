@@ -173,7 +173,7 @@ async def active_afk(_, message: Message):
 chat_watcher_group = 1
 
 
-@pboto.on_message(
+@pbot.on_message(
     ~filters.me & ~filters.bot & ~filters.via_bot,
     group=chat_watcher_group,
 )
