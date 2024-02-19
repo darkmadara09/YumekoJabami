@@ -360,14 +360,17 @@ def help_button(update, context):
 def Alone_stats_back(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "insider_":
-        python = PYTHON_VERSION()
+        uptime = get_readable_time((time.time() - StartTime))
+        cpu = psutil.cpu_percent(interval=0.5)
+        mem = psutil.virtual_memory().percent
+        disk = psutil.disk_usage("/").percent
         text = f"""
 𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
 ➖➖➖➖➖➖
-ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: {y()}
-ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ: {telever}
-ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: {tlhver}
-ᴩʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: {pyrover}
+UPTIME ➼ {uptime}
+CPU ➼ {cpu}%
+RAM ➼ {mem}%
+DISK ➼ {disk}%
 """
             
     elif query.data == "alone_support":
