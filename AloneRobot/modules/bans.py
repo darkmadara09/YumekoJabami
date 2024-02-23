@@ -38,6 +38,11 @@ from AloneRobot.modules.log_channel import gloggable, loggable
 @user_admin
 @user_can_ban
 @loggable
+
+def send_random_gif(update: Update, context: CallbackContext):
+    gif_url = "https://media.giphy.com/media/l0MYt6Cy01was1dcM/giphy.gif"  # Replace this with your desired GIF URL
+    context.bot.send_animation(chat_id=update.effective_chat.id, animation=requests.get(gif_url).content)
+    
 def ban(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     user = update.effective_user
