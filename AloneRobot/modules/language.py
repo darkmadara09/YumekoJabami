@@ -35,7 +35,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 import AloneRobot.modules.sql.language_sql as sql
 from AloneRobot.langs import get_language, get_languages, get_string
 from AloneRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from AloneRobot.modules.helper_funcs.decorators import Exoncallback, Exoncmd
+from AloneRobot.modules.helper_funcs.decorators import Alonecallback, Alonecmd 
 
 
 def paginate(iterable: Iterable, page_size: int) -> Generator[List, None, None]:
@@ -82,7 +82,7 @@ def set_lang(update: Update, _) -> None:
         [
             InlineKeyboardButton(
                 text="ʜᴇʟᴘ ᴜs ɪɴ ᴛʀᴀɴsʟᴀᴛɪᴏɴs",
-                url="https://github.com/Abishnoi69/ExonRobot",  # plz. Don't edit and change
+                url="https://t.me/IxSupport",  # plz. Don't edit and change
             )
         ]
     )
