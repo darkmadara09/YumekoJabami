@@ -58,7 +58,7 @@ def gs(chat_id: Union[int, str], string: str) -> str:
         return "ᴍᴇ ɴᴏᴡ ʙᴜsʏ ᴡʜᴇɴ ғʀᴇᴇ ᴀᴅᴅ ᴛʜɪs "
 
 
-@Exoncmd(command="language")
+@Alonecmd(command="language")
 @user_admin
 def set_lang(update: Update, _) -> None:
     chat = update.effective_chat
@@ -89,7 +89,7 @@ def set_lang(update: Update, _) -> None:
     msg.reply_text(msg_text, reply_markup=InlineKeyboardMarkup(keyb))
 
 
-@Exoncallback(pattern=r"setLang_")
+@Alonecallback(pattern=r"setLang_")
 @user_admin_no_reply
 def lang_button(update: Update, _) -> None:
     query = update.callback_query
