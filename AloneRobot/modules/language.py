@@ -32,10 +32,10 @@ from typing import Generator, List, Union
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 
-import Exon.modules.sql.language_sql as sql
-from Exon.langs import get_language, get_languages, get_string
-from Exon.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from Exon.modules.helper_funcs.decorators import Exoncallback, Exoncmd
+import AloneRobot.modules.sql.language_sql as sql
+from AloneRobot.langs import get_language, get_languages, get_string
+from AloneRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from AloneRobot.modules.helper_funcs.decorators import Exoncallback, Exoncmd
 
 
 def paginate(iterable: Iterable, page_size: int) -> Generator[List, None, None]:
