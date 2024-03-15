@@ -361,13 +361,14 @@ def Alone_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "alone_":
         uptime = get_readable_time((time.time() - StartTime))
-        query.message.edit_caption(f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
+        query.message.edit_caption(f"*ʜᴇʏ,*💞\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
             "\n*ᴛʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ  ᴄᴏᴍᴍᴀɴᴅs:*"
-            "\n*⦿ /play ➠ ᴘʟᴀʏs ᴀ sᴏɴɢ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.*"
+            "\n\n⦿ /play ➠ ᴘʟᴀʏs ᴀ sᴏɴɢ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ."
             "\n\n⦿ /vplay  ➠ ᴘʟᴀʏs ᴀ sᴏɴɢ ᴏɴ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ."
             "\n⦿ /stop ➠ sᴛᴏᴘs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴘʟᴀʏɪɴɢ sᴏɴɢ."
             "\n⦿ /end ➠ ᴇɴᴅs ᴛʜᴇ ᴍᴜsɪᴄ ᴘʟᴀʏʙᴀᴄᴋ."
             "\n⦿ /skip ➠ sᴋɪᴘs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴏɴɢ."
+            "\n⦿ /video ➠ ᴅᴏᴡɴʟᴏᴀᴅ ғᴏʀ ᴀ ᴠɪᴅᴇᴏ."                        
             "\n⦿ /song ➠ ᴅᴏᴡɴʟᴏᴀᴅ ғᴏʀ ᴀ sᴏɴɢ.",
             parse_mode=ParseMode.MARKDOWN,
             
@@ -391,7 +392,7 @@ def Alone_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="alone_back"),
+                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="alone_back"),
                     ],
                 ]
             ),
@@ -1050,13 +1051,10 @@ def main():
                 photo=f"{START_IMG}",
                 caption=f"""
 ✨ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.
-━━━━━━━━━━━━━
-**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ [ʏᴜᴍᴇᴋᴏ](https://t.me/yumeko_ixbot)**
-**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{y()}`
-**ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ:** `{telever}`
-**ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{tlhver}`
-**ᴩʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ:** `{pyrover}`
-━━━━━━━━━━━━━
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+**ᴍᴀᴅᴇ ᴡɪᴛʜ 💞 ʙʏ [ɪx sᴜᴘᴘᴏʀᴛ](https://t.me/ix_bot_support_gc)**
+**ᴇɴᴛʀᴜsᴛɪɴɢ ʏᴏᴜʀ ʟɪғᴇ ᴛᴏ ᴀ ɢᴀᴍᴇ ᴏғ ᴄʜᴀɴᴄᴇ ɪs ɴᴏ ғᴇᴀᴛ ғᴏʀ ᴛʜᴇ sᴀɴᴇ.**
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
             )
