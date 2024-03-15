@@ -1079,7 +1079,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        Alone_stats_back, pattern=r"insider_", run_async=True
+        Alone_about_callback, pattern=r"alone_", run_async=True
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
