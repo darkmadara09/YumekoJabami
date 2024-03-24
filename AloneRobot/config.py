@@ -3,13 +3,13 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = "22398302" # integer value, dont use ""
-    API_HASH = "f4e4bf8e654ef1f09c9bc50d3895061c"
-    TOKEN = "6413944722:AAGlHAV7CbFAWSQQb3gYdAtGX4_HD9rkOqc"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 5054912509 # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    API_ID = "13279715" # integer value, dont use ""
+    API_HASH = "56e198053932ecf216af72a2ddffcd78"
+    TOKEN = "6413944722:AAENoBygE8dP7VAxYpyFSzMDKgoaNn00VHo"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 7122227582 # If you dont know, run the bot and do /id in your private chat with it, also an integer
     
-    SUPPORT_CHAT = "Demon_City_X"  # Your own group for support, do not add the @
-    START_IMG = "https://te.legra.ph/file/9e32466942dfd0d4e63a7.jpg"
+    SUPPORT_CHAT = "Love_And_War_Bby"  # Your own group for support, do not add the @
+    START_IMG = "https://telegra.ph/file/5ef552704f37386e53ddb.jpg"
     EVENT_LOGS = (-1002069450766)  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     MONGO_DB_URI= "mongodb+srv://bikash:bikash@bikash.3jkvhp7.mongodb.net/?retryWrites=true&w=majority"
     # RECOMMENDED
