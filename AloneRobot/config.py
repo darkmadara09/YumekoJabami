@@ -11,7 +11,7 @@ class Config(object):
     SUPPORT_CHAT = "Love_And_War_Bby"  # Your own group for support, do not add the @
     START_IMG = "https://telegra.ph/file/5ef552704f37386e53ddb.jpg"
     EVENT_LOGS = (-1002069450766)  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    MONGO_DB_URI= "mongodb+srv://teamdaxx123:teamdaxx123@cluster0.ysbpgcp.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_DB_URI= "mongodb+srv://userbot:userbot@cluster0.iweqz.mongodb.net/test?retryWrites=true&w=majority"
     # RECOMMENDED
     DATABASE_URL = "postgres://dwhesbut:l0W9zw6yDi38CuwbOrI3ztJJ3FdjEnAH@flora.db.elephantsql.com/dwhesbut"  # A sql database url from elephantsql.com
     CASH_API_KEY = (
