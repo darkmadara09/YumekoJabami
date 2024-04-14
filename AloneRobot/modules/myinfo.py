@@ -13,7 +13,7 @@ from AloneRobot import telethn as tgbot
 from AloneRobot.events import register 
 import AloneRobot.modules.sql.users_sql as sql
 from AloneRobot import StartTime
-import NekoRobot.utils.formatter as formatter
+import AloneRobot.utils.formatter as formatter
 
 
 edit_time = 5
