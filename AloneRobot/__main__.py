@@ -97,7 +97,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="⛩𝗔𝗕𝗜𝗟𝗜𝗧𝗜𝗘𝗦⛩", callback_data="help_back"),
+        InlineKeyboardButton(text="⛩𝗔𝗕𝗜𝗟𝗜𝗧𝗜𝗘𝗦⛩", callback_data="information"),
     ],
     [ 
         InlineKeyboardButton(text="🎵𝗠𝗨𝗦𝗜𝗖🎵", callback_data="alone_"),
