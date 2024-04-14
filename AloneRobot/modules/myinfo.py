@@ -10,7 +10,10 @@ from telethon import custom, events
 
 from AloneRobot import telethn as bot,BOT_NAME
 from AloneRobot import telethn as tgbot
-from AloneRobot.events import register
+from AloneRobot.events import register 
+import AloneRobot.modules.sql.users_sql as sql
+from AloneRobot import StartTime
+
 
 edit_time = 5
 f""" ======================={BOT_NAME}====================== """
@@ -22,12 +25,12 @@ file5 = "https://telegra.ph/file/701028ce085ecfa961a36.jpg"
 """ ======================={BOT_NAME}====================== """
 
 
-@register(pattern="/myinfo")
+@register(pattern="/mbbbjyinfo")
 async def proboyx(event):
     await event.get_chat()
     datetime.utcnow()
     firstname = event.sender.first_name
-    button = [[custom.Button.inline("ɪɴғᴏʀᴍᴀᴛɪᴏɴ", data="informations")]]
+    button = [[custom.Button.inline("ɪɴғᴏʀᴍᴀᴛɪᴏɴ", data="information")]]
     on = await bot.send_file(
         event.chat_id,
         file=file2,
@@ -65,16 +68,26 @@ async def proboyx(event):
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"information")))
 async def callback_query_handler(event):
+    bot_uptime = int(time.time() - StartTime)
+    cpu = psutil.cpu_percent()
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage("/").percent
+    process = psutil.Process(os.getpid())
+    users = sql.num_users()
+    chats = sql.num_chats()
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        LILIE = f"ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME}\n\n"
-        LILIE += f"ғɪʀsᴛ ɴᴀᴍᴇ: {PRO.first_name} \n"
-        LILIE += f"ʟᴀsᴛ ɴᴀᴍᴇ: {PRO.last_name}\n"
-        LILIE += f"ʏᴏᴜ ʙᴏᴛ : {PRO.bot} \n"
-        LILIE += f"ʀᴇsᴛʀɪᴄᴛᴇᴅ : {PRO.restricted} \n"
-        LILIE += f"ᴜsᴇʀ ɪᴅ: {boy}\n"
-        LILIE += f"ᴜsᴇʀɴᴀᴍᴇ : @{PRO.username}\n"
+        LILIE = "➤ Toji's Current System Stats \n\n"
+        LILIE += f"────────────────────────\n"
+        LILIE += f"• UPTIME: {formatter.get_readable_time((bot_uptime))}\n"
+        LILIE += f"• BOT: {round(process.memory_info()[0] / 1024 ** 2)} MB \n"
+        LILIE += f"• CPU: {cpu}% \n"
+        LILIE += f"• RAM: {mem}%\n"
+        LILIE += f"• DISK: {disk}%\n"
+        LILIE += f"• CHATS: {chats}\n"
+        LILIE += f"• USERS: {users}\n"
+        LILIE += f"────────────────────────\n"
         await event.answer(LILIE, alert=True)
     except Exception as e:
         await event.reply(f"{e}")
