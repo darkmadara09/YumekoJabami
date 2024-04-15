@@ -285,7 +285,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' \n[<a href="https://t.me/AloneXBots">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
+        text += ' \n[<a href="https://t.me/Yumeko_toxbot_support">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
             bot.username
         )
 
@@ -331,7 +331,7 @@ def info(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
+                                text="",
                                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                             ),
                         ],
