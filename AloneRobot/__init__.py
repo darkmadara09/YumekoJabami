@@ -153,7 +153,7 @@ DEV_USERS.add(6079943111)
 DEV_USERS.add(6079943111)
 
 
-updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+updater = tg.Updater(TOKEN, use_context=True)
 telethn = TelegramClient("alone", API_ID, API_HASH)
 
 pbot = Client("AloneRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN,in_memory=True)
